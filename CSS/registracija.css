@@ -1,0 +1,243 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none; 
+    /* bez crtice ispod linka*/
+ }
+
+ body{
+     margin: 0;
+     min-height: 100vh;
+     font-family: 'Cute',sans-serif;
+     background:  #a57b48;
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .burger_meni{
+    display: none;
+    height: 60px;
+    width: 60px;
+ }
+
+header{
+    width: 100%;
+    height: 130px;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.stranice{
+    list-style: none;
+}
+
+.stranice li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -webkit-text-stroke: 2px;
+    font-size: 20px;
+    display: inline-block;
+    margin-right: 80px;
+}
+
+
+
+
+
+.okvir{
+    color: #fff;
+    max-width: 650px;
+    background-color: #4F0000;
+    margin-bottom: 50px;
+    padding: 30px;
+    margin-top: 35px;
+    border-radius: 10px;
+
+}
+
+
+
+ #logo_meni{
+    margin-left: 50px;
+ }
+
+footer{
+   
+    width: 100%;
+    height: 130px;
+    background-color: whitesmoke;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ 
+ #ft_slika{
+    margin-right: 50px;
+ }
+
+ .futer_kontakt{
+    margin-left: 50px;
+ }
+
+ ul li a{
+    color: #4F0000;
+}
+
+a:hover {
+    color: #a57b48;
+    border-bottom: 2px solid #a57b48;
+}
+
+.osnovnipodaci{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.naziv{
+    border-bottom: solid 1.5px #fff;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.unos{
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 20px;
+    
+}
+
+.unos label{
+
+    width: 100%;
+    margin: 10px 0px;
+    font-size: larger;
+}
+
+.unos input{
+    height: 30px;
+    width: 90%;
+    border: 2px solid burlywood;
+    border-radius: 8px;
+    padding: 0px 15px;
+}
+
+.polNaslov{
+    font-size: larger;
+    border-bottom: 2px solid #fff;
+}
+
+.odabirPola{
+    padding: 10px 30px 10px 10px;
+    cursor: pointer;
+}
+
+
+
+.submitDugme{
+    margin-bottom: 15px;
+    /* margin-top: 10px; */
+}
+.submitDugme input{
+    display: block;
+    border-radius: 8px;
+    width: 100%;
+    margin-top: 30px;
+    padding: 15px;
+    font-size: larger;
+    background-color: burlywood;
+    color: antiquewhite;
+    font-weight: 750;
+}
+
+.submitDugme input:hover{
+    color: #4F0000;
+    cursor: pointer;
+}
+
+@media(max-width:900px){
+    .burger_meni{
+        display: block;
+        margin-right: 30px;
+        cursor: pointer;
+    }
+    .stranice{
+        position: absolute;
+        left:-100%;
+        display: flex;
+        flex-direction: column;
+        background-color:  whitesmoke;
+        width: 100%;
+        text-align: center;
+        top: 129px;
+        transition: 0.4s;
+    }
+    .stranice li{
+        margin: 16px 0;
+    }
+    .stranice.pomeri{
+        top:129px;
+        left: 0;
+    }
+
+    ul li a{
+        color: #4F0000;
+    }
+
+}
+
+@media(max-width:900px){
+    .logo{
+        height: 120px;
+        width: 120px;
+    }
+    .burger_meni{
+        height: 50px;
+        width: 50px;
+        margin-right: 30px;
+    }
+}
+
+@media(max-width:600px){
+    .okvir{
+        min-width: 450px;
+    }
+
+    .unos{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .odabirPola{
+        display: flex;
+        justify-content: space-between;
+        width:100%;
+    }
+
+    .osnovnipodaci{
+        max-height: 380px;
+        overflow: auto; 
+        /* When you set overflow to auto, the browser will automatically add a scrollbar to the element if the content inside it overflows its boundaries. */
+    }
+
+    .osnovnipodaci::-webkit-scrollbar{
+        width: 0;
+
+    }
+
+    .unos input{
+        height: 50px;
+    }
+}

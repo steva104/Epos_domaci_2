@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Coolinaka-REGISTRACIJA</title>
+    <link rel="stylesheet" href="../CSS/registracija.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header class="meni">
+        <img src="../Slike/logo-bezslova.png" alt="logo" id="logo_meni">
+
+        <ul class="stranice">
+            <li><a href="naslovna.html">POČETNA</a></li>
+            <li><a href="recepti.html">RECEPTI</a></li>
+            <li><a href="o_nama.html">O NAMA</a></li>
+            <li><a href="registracija.html">REGISTRACIJA</a></li>
+        </ul>
+
+        <img src="../Slike/burger_meni_logo.png" alt="burger" class="burger_meni">
+
+    </header>
+
+    <main>
+       
+        <div class="okvir">
+            <h1 class="naziv">Registracija</h1>
+            <form action="#" onsubmit="return false">
+                <div class="osnovnipodaci">
+    
+                    <div class="unos">
+                        <label for="ime">Ime</label>
+                        <input type="text" id="ime" name="ime" placeholder="Unesite vaše ime"/>
+                    </div>
+    
+                    <div class="unos">
+                        <label for="prezime">Prezime</label>
+                        <input type="text" id="prezime" name="prezime" placeholder="Unesite vaše prezime"/>
+                    </div>
+    
+                    <div class="unos">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Unesite vaš email"/>
+                    </div>
+    
+                    <div class="unos">
+                        <label for="alias">Korisničko ime</label>
+                        <input type="text" id="alias" name="alias" placeholder="Unesite korisničko ime"/>
+                    </div>
+    
+                    <div class="unos">
+                        <label for="lozinka">Lozinka</label>
+                        <input type="password" id="lozinka" name="lozinka" placeholder="Lozinka"/>
+                    </div>
+    
+                    <div class="unos">
+                        <label for="potvrda">Potvrda lozinke</label>
+                        <input type="password" id="potvrda" name="potvrda" placeholder="Potvrda lozinke"/>
+                    </div>
+                </div>
+    
+                <div class="polPodaci">
+                    <span class="polNaslov">Pol</span>
+                    <div class="odabirPola">
+                        <input type="radio" name="pol" id="musko" checked="checked">
+                        <label for="musko">Muški</label>
+                        <input type="radio" name="pol" id="zensko">
+                        <label for="zensko">Ženski</label>
+                    </div>
+                </div>
+    
+                <div class="submitDugme">
+                    <input type="submit" value="Registruj se" id="submitDugme">
+                </div>
+                
+            
+            </form>
+        </div>
+
+
+
+    </main>
+
+
+
+
+
+
+    <footer> 
+
+        <div class="futer_kontakt">
+            <h4>KONTAKT</h4><br>
+            <p>coolinarka@gmail.com <br> 063455008</p>
+
+        </div>
+
+        <img src="../Slike/logo-bezslova.png" alt="Logo" id="ft_slika">
+    </footer>
+    
+    <script src="../JavaScript/registracija.js"></script>
+</body>
+</html>

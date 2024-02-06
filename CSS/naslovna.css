@@ -1,0 +1,250 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none; 
+    /* bez crtice ispod linka*/
+ }
+
+ body{
+     margin: 0;
+     min-height: 100vh;
+     font-family: 'Quicksand', sans-serif;
+     background: #a57b48;
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     flex-direction: column;
+ }
+ 
+
+header{
+    width: 100%;
+    height: 130px;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.stranice{
+    list-style: none;
+}
+
+.stranice li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -webkit-text-stroke: 2px;
+    font-size: 20px;
+    display: inline-block;
+    margin-right: 80px;
+}
+
+.burger_meni{
+    display: none;
+    height: 60px;
+    width: 60px;
+ }
+
+ #logo_meni{
+    margin-left: 50px;
+ }
+
+ footer{
+    width: 100%;
+    height: 130px;
+    background-color: whitesmoke;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ #ft_slika{
+    margin-right: 50px;
+    cursor: pointer;
+ }
+
+ .futer_kontakt{
+    margin-left: 50px;
+ }
+
+.pocetna{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#logo_veliki{
+    margin-bottom: 50px;
+}
+
+.popularno{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #873E0A;
+    padding: 10px 20px 20px 20px;
+    margin-bottom: 100px;
+
+}
+
+.recepti{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.recepti.prvi_recept{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recepti.drugi_recept{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recepti.treci_recept{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#slika_suljpa{
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+#slika_proja{
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+#slika_lazanja{
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.podnaslov{
+    color: beige;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    
+}
+
+.pop{
+    color: #fff;
+    margin-right: 1050px;
+    margin-bottom: 15px;
+}
+
+h1{
+    color: #fff;
+}
+
+.dugme{
+    background-color: #4F0000;
+    color: #fff;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+@media(max-width:900px){
+    .burger_meni{
+        display: block;
+        margin-right: 30px;
+        cursor: pointer;
+    }
+    .stranice{
+        position: absolute;
+        left:-100%;
+        display: flex;
+        flex-direction: column;
+        background-color:  whitesmoke;
+        width: 100%;
+        text-align: center;
+        top: 129px;
+        transition: 0.4s;
+    }
+    .stranice li{
+        margin: 16px 0;
+    }
+    .stranice.pomeri{
+        top:129px;
+        left: 0;
+    }
+
+    ul li a{
+        color: #4F0000;
+    }
+
+    .popularno{
+        flex-direction: column;
+        height: 800px;
+    }
+    .recepti{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .podnaslov{
+        text-align: center;
+    }
+
+    .pop{
+       margin: 0px;
+       margin-bottom: 50px;
+    }
+    h1{
+        text-align: center;
+    }
+}
+
+@media(max-width:600px){
+
+
+    .popularno{
+        max-height: 380px;
+        overflow: auto;
+    }
+    .popularno::-webkit-scrollbar{
+        width: 0px;
+    }
+
+    .pop{
+        font-size: larger;
+    }
+}
+
+ul li a{
+    color: #4F0000;
+}
+
+a:hover {
+    color: #a57b48;
+    border-bottom: 2px solid #a57b48;
+}

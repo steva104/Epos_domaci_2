@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none; 
+    /* bez crtice ispod linka*/
+ }
+
+ body{
+     margin: 0;
+     min-height: 100vh;
+     font-family: 'Quicksand', sans-serif;
+     background: #a57b48;
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     flex-direction: column;
+ }
+ 
+
+header{
+    width: 100%;
+    height: 130px;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.stranice{
+    list-style: none;
+}
+
+.stranice li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -webkit-text-stroke: 2px;
+    font-size: 20px;
+    display: inline-block;
+    margin-right: 80px;
+}
+
+.burger_meni{
+    display: none;
+    height: 60px;
+    width: 60px;
+ }
+
+ #logo_meni{
+    margin-left: 50px;
+ }
+
+ footer{
+    width: 100%;
+    height: 130px;
+    background-color: whitesmoke;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ #ft_slika{
+    margin-right: 50px;
+    cursor: pointer;
+ }
+
+
+ .futer_kontakt{
+    margin-left: 50px;
+ }
+
+
+h1{
+    align-self: center;
+    margin-bottom: 80px;
+    justify-content: center;
+    color: #4F0000;
+}
+.sadrzaj{
+
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+
+}
+
+.red1{
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.red2{
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.red3{
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+
+
+.red4{
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+#slika{
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.recepti{
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+}
+
+.naziv{
+    margin-bottom: 70px;
+    font-size: larger;
+    color: #fff;
+}
+
+.sastojci{
+    margin-bottom: 90px;
+    color: #fff;
+    font-style: italic;
+}
+
+.dugme{
+    background-color: #4F0000;
+    color: #fff;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+
+ul li a{
+    color: #4F0000;
+}
+
+a:hover {
+    color: #a57b48;
+    border-bottom: 2px solid #a57b48;
+}
+
+ @media(max-width:1040px){
+    .burger_meni{
+        display: block;
+        margin-right: 30px;
+        cursor: pointer;
+    }
+    .stranice{
+        position: absolute;
+        left:-100%;
+        display: flex;
+        flex-direction: column;
+        background-color:  whitesmoke;
+        width: 100%;
+        text-align: center;
+        top: 129px;
+        transition: 0.4s;
+    }
+    .stranice li{
+        margin: 16px 0;
+    }
+    .stranice.pomeri{
+        top:129px;
+        left: 0;
+    }
+
+    .red1{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+    
+    .red2{
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+    
+    .red3{
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+    
+    
+    
+    .red4{
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
+    .recepti{
+        margin-bottom: 30px;
+    }
+
+    .recept4.naziv{
+        font-size: medium;
+    }
+    .naziv{
+        margin-bottom: 30px;
+    }
+    .sastojci{
+        margin-bottom: 10px;
+    }
+    ul li a{
+        color: #4F0000;
+    }
+ }
+
+
+
